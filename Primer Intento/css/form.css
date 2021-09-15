@@ -1,13 +1,15 @@
 .main__form{
     display: flex;
-    justify-content: center;
-}
-form{
     align-content: center;
     justify-content: center;
-
+    background-color: white;
+    
 }
-.inputs{
+
+.main__form--label{
     display: block;
-    position: relative;
+}
+
+.main__form--input{
+    display: block;
 }
