@@ -1,0 +1,13 @@
+.main__form{
+    display: flex;
+    justify-content: center;
+}
+form{
+    align-content: center;
+    justify-content: center;
+
+}
+.inputs{
+    display: block;
+    position: relative;
+}
