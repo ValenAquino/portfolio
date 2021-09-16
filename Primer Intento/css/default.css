@@ -10,19 +10,22 @@
 }
 
 body{
-	background-color: #24252a;
+	background: rgb(0,0,0);
+	background: linear-gradient(20deg, rgba(0,0,0,1) 0%, rgba(36,37,42,1) 75%, rgba(50,53,69,1) 100%);
 }
 
 header{
-	box-shadow: 0px -0px 10px 3px rgb(0, 0, 0);
+	position:fixed;
+	top: 0%;
+	box-shadow: 0px 0px 10px 1px rgb(0, 0, 0);
 	justify-content: space-between;
-	background-color: #151518;
+	background-color: #151818;
 	align-items: center;
-	position: relative;
 	padding: 10px 2%;
 	display: flex;
 	height: 60px;
 	width: 100%;
+	z-index: 11;
 }
 
 li, a, button{
@@ -48,7 +51,6 @@ button:hover{
 }
 
 main{
-    background-color: #24252a;
 	width: 100vw;
 	height: 100vh;
 }

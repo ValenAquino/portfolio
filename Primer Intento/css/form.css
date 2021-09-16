@@ -1,21 +1,73 @@
-.main__form{
-    box-shadow: 0px 0px 10px 2px rgb(0, 0, 0);
-    background-color: #6e040d;
-    margin: 100px auto 100px auto;
-    max-width: 550px;
-    padding: 0;
-    text-align: center;
-    color: whitesmoke;
+*{
+    margin: 0px;
 }
 
-h1{
-    margin-top: 0px;
-    padding: 20px;
-    box-shadow: 0px 0px 1px 0px rgb(0, 0, 0);
-    text-shadow: 1px 1px 10px rgb(0, 0, 0);
-    width: 100%;
-    background-color: #c90011;
+main{
+    margin-top: 4%;
 }
+
+.primerPantalla{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background-size: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    box-shadow: 0px 0px 30px 10px rgba(201, 159, 255, 0.3);
+    background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+}
+
+.primerPantalla__izquierda{
+    width: 50%;
+    height: 100vh;
+    padding: 5%;
+}
+
+.primerPantalla__izquierda h1{
+    text-align: center;
+    font-size: 80px;
+    color: rgb(219, 116, 205);
+    text-shadow: rgb(44, 0, 58) 0px 0px 8px;
+}
+
+.primerPantalla__izquierda p{
+    text-align: justify;
+    color: rgb(80, 18, 99);
+    margin: 10% 0%;
+}
+
+.primerPantalla__derecha{
+    width: 50%;
+    height: 100vh;
+    background-image: url("../assets/images/imagen.jpg");
+    background-size: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Pantalla de formulario */
+
+
+.main__form{
+    height: 100vh;
+}
+
+.main__form--active{
+    max-width: 600px;
+    max-height: 500px;
+    margin: 100px auto;
+    background: rgb(201,0,17);
+    background: radial-gradient(circle, rgba(201,0,17,1) 0%, rgba(177,25,38,1) 72%, rgba(110,4,13,1) 150%);
+
+    position: relative;
+    z-index: 10;
+    color: whitesmoke;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0px 0px 20px 2px rgb(0, 0, 0);
+}
+
 
 .main__form__div{
     justify-content: space-between;
@@ -23,19 +75,76 @@ h1{
     margin: 0px 40px 0px 40px;
 }
 
-.main__form__label--active{
+.main__form__input--activeLeft{
+    color: white;
     display: inline-block;
-    margin: 0.7vw;
+    width: 50%;
+    font-size: 100%;
+    margin: 1vw 2% 1vw 1%;
+    padding: 10px;
+    background-color: rgba(10, 0, 0, 0.2);
+}
+
+.main__form__input--activeRight{
+    color: white;
+    display: inline-block;
+    width: 50%;
+    font-size: 100%;
+    margin: 1vw 1% 1vw 2%;
+    padding: 10px;
+    background-color: rgba(10, 0, 0, 0.2);
 }
 
 .main__form__input{
-    display: block;
-    width: 100%;
+    color: white;
+    width: 84%; 
     font-size: 100%;
+    margin: 0.1vw auto 1vw auto;
+    padding: 15px;
+    background-color: rgba(10, 0, 0, 0.2);
 }
 
-.main__form__input--active{
-    display: inline-block;
-    width: 40%;
-    font-size: 100%;
+.enviarForm {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+	background-color: goldenrod;
+	text-shadow: 0px 0px 10px black;
+    border: none;
+	border-radius: 50px;
+}
+
+.enviarForm :hover{
+	text-shadow: 0px 0px 0px black;
+	background-color: white;
+	color: rgb(255, 90, 48);
+	cursor: pointer;
+}
+
+.allInputs{
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+* ::placeholder{
+    color: rgba(255,255,255, 0.5);
+}
+
+input, textarea{
+    border: 0px;
+}
+
+textarea{
+    resize: none;
+}
+
+h2 {
+    color: white;
+    padding: 1px;
+    text-align: center;
+    font-family: Roboto;
+    font-weight: 500;
+    margin: 1px;
+    text-shadow: 0px 0px 15px rgb(0, 0, 0);
 }

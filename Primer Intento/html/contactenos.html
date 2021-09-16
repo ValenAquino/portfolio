@@ -5,8 +5,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="../css/default.css">
-	<link rel="stylesheet" href="../css/normalize.css">
 	<link rel="stylesheet" href="../css/form.css">
+	<link rel="shortcut icon" href="../assets/images/icon.png">
 	<title>Contacto</title>
 </head>
 <body>
@@ -24,17 +24,30 @@
 		</nav>
 	</header>
 	<main>
-		<div class="main__form">
-			<h1>Formulario de contacto</h1>
-			<form action="GET">
-					<div class="main__form__div">
-						<input class="main__form__input--active" type="text" id="nombre" placeholder="Nombre">
-						<input class="main__form__input--active" type="number" id="phone" placeholder="Número">
-					</div>
-					<input class="main__form__input" type="email", id="mail" placeholder="Email">	
-					<textarea class="main__form__input" id="cuerpoDelMensaje" cols="30" rows="10" placeholder="Ingrese aqui su mensaje"></textarea>
-				</form>
+		<div class="primerPantalla">
+			<div class="primerPantalla__izquierda">
+			<h1>Contactanos</h1>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem neque magnam fugit amet impedit deleniti voluptatem, earum dolorem nobis dolore quisquam, sunt, iusto doloribus consequatur id sint asperiores explicabo libero? Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, minima vitae quae recusandae molestiae accusantium cupiditate molestias quam laboriosam atque natus ratione accusamus reprehenderit, dolorum dolor explicabo totam placeat hic! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque, possimus? Itaque inventore ut nulla aperiam fuga voluptatum consequatur ex at accusantium maiores assumenda laboriosam praesentium modi, dolorem quod quisquam suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, suscipit placeat illo officiis nisi dicta est repellendus nesciunt quae voluptatem explicabo quaerat nemo inventore minus exercitationem optio debitis adipisci rerum? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur facilis tempore id. Distinctio cupiditate ipsam laborum porro sed autem libero. Quas debitis, eligendi voluptatibus autem nisi illo praesentium? Inventore, est? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+			</p>
+			</div>
+			<div class="primerPantalla__derecha"></div>
 		</div>
-	</main>
+		<div class="main__form">
+			<div class="main__form--active">
+				<h2>Formulario de contacto</h2>
+				<form action="GET">
+				<div class="allInputs">
+					<div class="main__form__div">
+						<input class="main__form__input--activeLeft" type="text" id="nombre" placeholder="Nombre" required>
+						<input class="main__form__input--activeRight" type="number" id="phone" placeholder="Número">
+					</div>
+					<input class="main__form__input" type="email", id="mail" placeholder="Email" required>	
+					<textarea class="main__form__input" id="cuerpoDelMensaje" cols="30" rows="10" placeholder="Ingrese aqui su mensaje" required></textarea>
+					<button class="enviarForm" type="submit">Enviar</button>
+				</div>
+			</form>
+			</div>
+		</div>
+
+
 </body>
-</html>
