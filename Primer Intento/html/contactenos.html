@@ -25,19 +25,14 @@
 	</header>
 	<main>
 		<div class="main__form">
+			<h1>Formulario de contacto</h1>
 			<form action="GET">
-					<label for="nombre" class="main__form--label">Nombre</label>
-					<input class="main__form__label--input" type="text" id="nombre" value="">
-		
-					<label for="mail" class="main__form--label">Correo Electronico</label>
-					<input class="main__form__label--input" type="email", id="mail">
-		
-					<label for="phone" class="main__form--label">Numero telefónico</label>
-					<input class="main__form__label--input" type="number", id="phone">
-	
-	
-					<label for="cuerpoDelMensaje" class="main__form--label">Mensaje </label>
-					<textarea id="cuerpoDelMensaje" cols="30" rows="10"></textarea>
+					<div class="main__form__div">
+						<input class="main__form__input--active" type="text" id="nombre" placeholder="Nombre">
+						<input class="main__form__input--active" type="number" id="phone" placeholder="Número">
+					</div>
+					<input class="main__form__input" type="email", id="mail" placeholder="Email">	
+					<textarea class="main__form__input" id="cuerpoDelMensaje" cols="30" rows="10" placeholder="Ingrese aqui su mensaje"></textarea>
 				</form>
 		</div>
 	</main>
